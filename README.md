@@ -31,9 +31,9 @@ The dataset is [located here.](https://www.kaggle.com/praveengovi/coronahack-che
 
 Let's take a look at some example images:
 
-![normal](presentation_imgs/normal.png)
-![virus](presentation_imgs/virus.png)
-![bacteria](presentation_imgs/bacteria.png)
+![normal](presentation_imgs/normal.PNG)
+![virus](presentation_imgs/virus.PNG)
+![bacteria](presentation_imgs/bacteria.PNG)
 
 ### Distribution of our data
 Our classes are distributed like so:
