@@ -37,7 +37,7 @@ Let's take a look at some example images:
 
 ### Distribution of our data
 Our classes are distributed like so:
-![pie](/presentation_imgs/pie.png)
+![pie](/presentation_imgs/pie.PNG)
 
 ## Modeling
 
@@ -52,7 +52,7 @@ Here's our data augmentation pipeline:
 + Standardization (x - mean / std)
 
 Here's some images after the transformations:
-![transformed](/presentation_imgs/transformed.png)
+![transformed](/presentation_imgs/transformed.PNG)
 
 ### The Model
 Transfer Learning is a very popular technique in computer vision (and also increasingly popular in NLP after the introduction of transformer models). The basic idea is to take a model that has been trained on a very large dataset for many many epochs and 'fine-tune' it for a narrower problem. Often times these models have been trained on something like [ImageNet](https://en.wikipedia.org/wiki/ImageNet) which has ~14million images and over 20k categories. The fine-tuneing involves removing the final output layer, replacing it with your own (in our case a fully connected layer with 3 nodes) and then unfreezing various layer weights so that they can learn more about your images.
@@ -61,10 +61,10 @@ Both ResNet18 and ResNet50 were tested.  The latter of the two tended to overfit
 
 ## Results
 The unfrozen layers were trained over 25 epochs.  Here are the results:
-![cm1](/presentation_imgs/cm1.png)
+![cm1](/presentation_imgs/cm1.PNG)
 
 Now let's take a look at some of the incorrectly classified images:
-![false_preds](/presentation_imgs/false_preds.png)
+![false_preds](/presentation_imgs/false_preds.PNG)
 As you can see, this isn't exactly an easy task.  As a non-medical expert, it seems almost impossible to find any kind of distinguishing features.
 
 ## Conclusion
